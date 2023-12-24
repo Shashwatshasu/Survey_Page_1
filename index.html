@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang-"en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Survey_HEXA</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  
+  <div class="container">
+    
+    <header class="header">
+      <h1 id="title" class="text-center">Survey By Hexacalista</h1>
+      <p id="description" class="text-center">This is the Survey Form for HEXA Family.</p>
+    </header>
+
+    <form id="survey-form">
+
+      <div class="form-group">
+        <label for="name" id="name-label">Name</label>
+        <input type="text" id="name" placeholder="Enter your Name" name="name" required class="form-control" />
+      </div>
+
+      <div class="form-group">
+        <label for="email" id="email-label">Email</label>
+        <input type="email" id="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" placeholder="Enter your Email" required class="form-control" name="email" />
+      </div>
+
+      <div class="form-group">
+        <label for="number" id="number-label">Age</label>
+        <input type="number" id="number" min="16" max="55" placeholder="Enter your Age" required class="form-control" name="age" />
+      </div>
+
+      <div class="form-group">
+        <p>Your Designation</p>
+        <select id="dropdown" class="form-control">
+          <option disabled selected value="0">Select your choice
+          <option>
+          <option value="1">Team Leader
+          <option>
+          <option value="2">Team Member
+          <option>
+          <option value="3">Other
+          <option>
+        </select>
+      </div>
+      
+      <div class="form-group">
+        <p>How is your First Day?</p>      
+        <label for="radio_1"><input type="radio" name="radio" id="radio_1" value="good" class="input-radio" /> Good
+        </label>
+
+        <label for="radio_2"><input type="radio" name="radio" id="radio_2" value="not-good" class="input-radio" /> Not Good
+        </label>
+
+        <label for="radio_3"><input type="radio" name="radio" id="radio_3" value="can't-say" class="input-radio" />
+          Can't Say
+        </label>
+      </div>
+
+      <div class="form-group">
+        <p>In which Project's you are Working on?
+          <span class="clue">(check all you apply)</span>
+        </p>
+
+        <label for="check_1"><input type="checkbox" id="check_1" value="iot" class="input-checkbox" /> IoT
+        </label>
+
+        <label for="check_2"><input type="checkbox" id="check_2" value="data-science" class="input-checkbox" /> Data
+          Science
+        </label>
+
+        <label for="check_3"><input type="checkbox" id="check_3" value="embedded-project" class="input-checkbox" />
+          Embedded Project
+        </label>
+
+        <label for="check_4"><input type="checkbox" id="check_4" value="dsa" class="input-checkbox" /> DSA
+        </label>
+
+        <label for="check_5"><input type="checkbox" id="check_5" value="web-dev" class="input-checkbox" /> Web Development
+        </label>
+      </div>
+
+      <div class="form-group">
+        <p>Any comments or suggestions?</p>
+        <textarea id="comment" placeholder="Enter your comment here..." class="input-textarea"></textarea>
+      </div>
+
+      <div class="form-group">
+        <button id="submit" type="submit" class="submit-button">Submit</button>
+      </div>
+
+    </form>
+
+  </div>
+
+</body>
+
+</html>
